@@ -9,43 +9,34 @@
 </head>
 <body>
 
-    <div class="video-container">
+<div class="video-container">
 
-        <video
-            id="saveTheDate"
-            autoplay
-            muted
-            playsinline
-            preload="auto">
+    <video
+        id="video"
+        autoplay
+        muted
+        playsinline
+        preload="auto">
+        <source src="video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
 
-            <source src="video.mp4" type="video/mp4">
+    <div id="overlay">
+        <!-- Modifier le lien Google Forms ci-dessous -->
+        <a
+            id="rsvpButton"
+            href="https://forms.gle/VOTRE-LIEN-ICI"
+            target="_blank">
 
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
+            <!-- Modifier le texte du bouton ci-dessous -->
+            RSVP
 
-        <div id="overlay">
-
-            <!--
-            ==========================================
-            REMPLACER LE # CI-DESSOUS PAR LE LIEN
-            DE TON GOOGLE FORM
-            ==========================================
-            -->
-
-            <a
-                id="rsvpButton"
-                href="https://www.google.fr/"
-                target="_blank">
-
-                💌 RSVP
-
-            </a>
-
-        </div>
-
+        </a>
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
